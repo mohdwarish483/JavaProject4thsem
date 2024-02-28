@@ -1,7 +1,5 @@
 package Room;
 
-import java.util.ArrayList;
-
 public class Room {
     private String roomNo;
     private String patientID;
