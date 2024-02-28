@@ -30,29 +30,27 @@ Import the SQL schema from dumps/FinalOOPSdb.sql.
 ```
 ## File Structure
 
-.idea: IntelliJ IDEA configuration files.
-lib: External libraries, including MySQL Connector/J.
-out: Compiled Java classes.
-src: Source code files.
-CSVfiles: Directory for CSV files.
-DAOpackage: Data Access Object package.
-Doctors: Package containing Doctor-related classes.
-Nurse: Package containing Nurse-related classes.
-Patients: Package containing Patient-related classes.
-Room: Package containing Room-related classes.
-dumps: SQL dump files.
+.idea: IntelliJ IDEA configuration files.<br>
+lib: External libraries, including MySQL Connector/J.<br>
+out: Compiled Java classes.<br>
+src: Source code files.<br>
+CSVfiles: Directory for CSV files.<br>
+DAOpackage: Data Access Object package.<br>
+Doctors: Package containing Doctor-related classes.<br>
+Nurse: Package containing Nurse-related classes.<br>
+Patients: Package containing Patient-related classes.<br>
+Room: Package containing Room-related classes.<br>
+dumps: SQL dump files.<br>
 
 
 ## Usage
-
 Use the following commands to perform various operations:
 
 **Patient Operations**
 Add patient:
 
-```bash
   java -cp ".:./lib/mysql-connector-java.jar" src.Driver.Driver -add patient < Patient name > < Patient ID > < Patient age > < Gender > < Admission Date > < Blood Group> < Phone number > < Status >
-```
+
 Remove:
 
 java -cp ".:./lib/mysql-connector-java.jar" src.Driver.Driver -remove patient < Patient id >
@@ -78,10 +76,8 @@ Search patient:
 java -cp ".:./lib/mysql-connector-java.jar" src.Driver.Driver -search patient <column name/names separated by comma> <constraint (optional)>
 
 ## Other Operations:
-Similar commands are available for insurance patients, doctors, nurses, and rooms. Replace -add patient, -remove patient, etc., with the respective commands for insurance patients, doctors, nurses, and rooms.
+Similar commands are available in the driver class for insurance patients, doctors, nurses, and rooms. Replace -add patient, -remove patient, etc., with the respective commands for insurance patients, doctors, nurses, and rooms operations.
 
 
 ## author
-mohd warish
-9991463786
-khanwarish483@gmail.com
+mohd warish<br>9991463786<br>khanwarish483@gmail.com
